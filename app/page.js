@@ -7,7 +7,7 @@ export default function HomePage() {
   return (
     <div className="font-sans text-white bg-black min-h-screen">
       {/* Navbar */}
-      <nav className="flex justify-between items-center p-4 bg-gray-900 shadow-md">
+      <nav className="flex justify-between items-center p-4 bg-gray-900 shadow-md ">
         <h1 className="text-3xl font-bold text-green-400">NetSpeak</h1>
         <ul className="flex space-x-6">
           <li><a href="#about" className="hover:text-green-300">About</a></li>
@@ -17,7 +17,9 @@ export default function HomePage() {
       </nav>
 
       {/* Landing Section */}
-      <header className="text-center py-20 bg-gradient-to-r from-green-900 to-black">
+      <img src='bg.jpg' alt='alt image' className='h-[100vh] w-full object-fill z-0 absolute'/>
+      <header className="text-center h-[80vh] relative z-50 pb-20 pt-36 bg-gradient-to-r">
+        
         <h2 className="text-5xl font-extrabold mb-6">Welcome to NetSpeak</h2>
         <p className="text-xl max-w-2xl mx-auto">Empowering users to diagnose and resolve network issues through AI-powered CLI command generation.</p>
         <Link href="/chat">
@@ -26,7 +28,7 @@ export default function HomePage() {
       </header>
 
       {/* About Section */}
-      <section id="about" className="px-8 py-16 bg-gray-800">
+      <section id="about" className="px-8 py-16 bg-gray-800 relative">
         <h3 className="text-4xl font-bold mb-6">About NetSpeak</h3>
         <p className="text-lg leading-8 max-w-4xl">
           NetSpeak is a smart assistant designed to simplify network issue resolution. It understands natural language input and generates precise CLI commands tailored to Cisco environments. Whether you're facing slow speeds, blocked apps, or need bandwidth management, NetSpeak makes it easy to apply professional network configurations.

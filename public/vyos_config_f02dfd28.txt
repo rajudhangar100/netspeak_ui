@@ -1,0 +1,12 @@
+configure
+delete qos policy shaper APP_QOS_POLICY
+delete firewall name APP_BLOCK_FW
+set qos policy shaper APP_QOS_POLICY description 'QoS Policy for Application Traffic'
+set qos policy shaper APP_QOS_POLICY default bandwidth '100mbit'
+set qos policy shaper APP_QOS_POLICY default burst '15k'
+set qos policy shaper APP_QOS_POLICY default queue-type fair-queue
+set firewall name APP_BLOCK_FW default-action accept
+set firewall name APP_BLOCK_FW description 'Firewall to Block Specific Applications'
+set interfaces ethernet eth0 traffic-policy out APP_QOS_POLICY
+commit
+save
