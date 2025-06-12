@@ -23,7 +23,7 @@ export default function HomePage() {
         <h2 className="text-5xl font-extrabold mb-6">Welcome to NetSpeak</h2>
         <p className="text-xl max-w-2xl mx-auto">Empowering users to diagnose and resolve network issues through AI-powered CLI command generation.</p>
         <Link href="/chat">
-          <button className="mt-8 px-6 py-3 bg-green-500 hover:bg-green-600 text-black rounded-full text-lg font-bold">Launch Chatbot</button>
+          <button className="mt-8 px-6 py-3 bg-green-500 hover:bg-green-600 text-black rounded-full text-lg font-bold">Start Now</button>
         </Link>
       </header>
 

@@ -86,7 +86,7 @@ export default function Chatbot() {
         <Button
           onClick={handleSubmit}
           disabled={loading}
-          className="bg-green-500 hover:bg-green-600 text-white font-semibold"
+          className="bg-green-500 hover:bg-green-600 text-white font-semibold cursor-pointer"
         >
           {loading ? 'Generating...' : 'Submit'}
         </Button>
